@@ -1,5 +1,4 @@
-if ~isdeployed
-addpath(genpath(fileparts(mfilename('fullpath'))))
+addpath(genpath(pwd))
 
 
 % Remove temp temp dir from path if it exists
@@ -38,4 +37,4 @@ else % OCTAVE
     end
 
 end
-end
+
