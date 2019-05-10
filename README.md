@@ -1,3 +1,11 @@
+This is a fork of [mrtm-zurich](https://github.com/mrtm-zurich)'s submission to the 2019 ISMRM Reproducibility Challenge.
+
+Work done in this fork was made at the [2019 MRathon](https://mrathon.github.io).
+
+The main aim was to create an interactive notebook using Jupyter Notebook, Octave, and Plotly. This notebook may also be hosted on MyBinder.
+
+**Original readme below.**
+
 Reproduciblity Challenge #1 (2019) - Arbitrary SENSE
 ====================================================
 
