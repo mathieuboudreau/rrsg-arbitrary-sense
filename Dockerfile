@@ -63,7 +63,7 @@ RUN cd $HOME/work;\
                 dash-renderer \
                 flask; \
     python -m sos_notebook.install;\
-    git clone https://github.com/mathieuboudreau/rrsg-arbitrary-sense;  \
+    git clone https://github.com/mathieuboudreau/rrsg-arbitrary-sense;   \
     cd rrsg-arbitrary-sense;\
     chmod -R 777 $HOME/work/rrsg-arbitrary-sense; \
     octave --eval "startup; \
