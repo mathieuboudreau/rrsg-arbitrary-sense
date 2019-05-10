@@ -15,8 +15,14 @@ switch dataset
         N = 300;
 end
 
-rawdata_real    = h5read(datafile,'/rawdata');
-trajectory      = h5read(datafile,'/trajectory');
+if ~moxunit_util_platform_is_octave % MATLAB
+    rawdata_real    = h5read(datafile,'/rawdata');
+    trajectory      = h5read(datafile,'/trajectory');
+else
+    if strfind(datafile, "rawdata_brain_radial_96proj_12ch.h5")
+        load('brain_rawdata_real.mat', 'rawdata_real');
+        load('brain_trajectory.mat', 'trajectory');
+end
 
 rawdata = double(rawdata_real.r+1i*rawdata_real.i); clear rawdata_real;
 signal = permute(rawdata, [3 2 1]);
