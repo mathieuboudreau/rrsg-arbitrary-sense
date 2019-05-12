@@ -23,6 +23,7 @@ RUN apt-get update && \
         bsdtar  \
         rsync \
         imagemagick \
+        ghostscript \
         gnuplot-x11 \
         libopenblas-base \
         octave \
